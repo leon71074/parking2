@@ -1,0 +1,34 @@
+#banner {
+  background-image: url("../images/停11.jpg");
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* margin: 0px;
+    padding: 0px; */
+}
+#logo {
+  font-family: DFKai-sb;
+}
+#map1 {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#select {
+  width: 100%;
+  height: auto;
+  font-size: 24px;
+}
+#choise {
+  /* display: inline-block; */
+  top: calc(50%);
+}
+#footer {
+  height: 80px;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
