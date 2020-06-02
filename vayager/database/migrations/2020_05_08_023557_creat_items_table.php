@@ -15,12 +15,13 @@ class CreatItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id');
-            //  $table->string('title',200);
-
-            // $table->string('size',50)->nullable();
-            // $table->boolean('enabled')->default(true);
-            // $table->string('pic',255)->nullable();
+            $table->string('title', 191);
+            $table->integer('price')->default(0)->nullble()->unsigned;
+            $table->string('size', 50)->nullable();
+            $table->boolean('enabled')->default(true);
+            $table->string('pic', 191)->nullable();
             $table->timestamps();
+            $table->timestamp('sell_at')->nullable();
         });
     }
 
@@ -33,6 +34,4 @@ class CreatItemsTable extends Migration
     {
         Schema::dropIfExists('items');
     }
-
-
 }

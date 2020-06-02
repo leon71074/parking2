@@ -13,19 +13,12 @@ class CreatParkTable extends Migration
      */
     public function up()
     {
-        Schema::create('parks', function (Blueprint $table){
+        Schema::create('parks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('parkName',200);
-            $table->string('parkAddr',50)->nullable();
-            $table->string('parkTel',50)->nullable();
-            $table->integer('parkPrice')->default(0)->nullable()->unsigned();
-            $table->integer('parkNum')->unique();
-            $table->string('parkPic',255)->nullable();
-            $table->timestamps();
-
-
-
-         });
+            $table->string('name', 200);
+            $table->string('owner', 200);
+            $table->string('address', 50)->nullable();
+        });
     }
 
     /**

@@ -1,8 +1,11 @@
 <?php
 
-use Illuminate\Database\Seeder;
 
-class itemsTableSeeder extends Seeder
+use Illuminate\Database\Seeder;
+use App\Item;
+use Carbon\Carbon;
+
+class ItemsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +14,8 @@ class itemsTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Post::create()
+
+        Item::truncate();
+        factory(App\Item::class, 100)->create();
     }
 }

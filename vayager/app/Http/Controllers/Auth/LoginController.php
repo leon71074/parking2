@@ -26,6 +26,14 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
+    // public function redirectTo(){
+    //     if(假如是管理員){
+    //         return '/admin';
+    //     }
+    //     else{
+    //         return '/home';
+    //     }
+    // }
 
     /**
      * Create a new controller instance.

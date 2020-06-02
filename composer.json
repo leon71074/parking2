@@ -1,2 +1,6 @@
 {
+    "require": {
+        "laracasts/flash": "^3.1",
+        "darryldecode/cart": "^4.1"
+    }
 }
